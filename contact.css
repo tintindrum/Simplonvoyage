@@ -1,4 +1,7 @@
 
+*{
+    font-family: 'poppins', sans-serif;
+}
 body {
     background: #66CCFF;
     font-family: Montserrat, "sans-serif";
@@ -8,6 +11,7 @@ body {
     }
     
     .contactez-nous {
+    margin-top: 5%;
     width: 700px;
     border: 1px solid;
     border-radius: 8px;
@@ -78,13 +82,14 @@ body {
     }
     
     form div:last-child {
-    align-items:center;
+    align-items:none;
     margin-top: 20px;
     }
     
     form button {
     width: 100px;
     max-width: 500px;
+    position: center;
     height: 80px;
     font-weight: 700;
     font-size: 14px;
@@ -99,4 +104,47 @@ body {
     form button:hover {
         letter-spacing: 4px;
         transition: 0.5s;
+    }
+
+    ul {
+        position: fixed;
+        justify-content: space-evenly;
+        width: 100%;
+        align-items: center;
+        top:0% ;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #CCFFFF;
+    }
+    
+    
+    li {
+        float: right;
+    }
+    
+    li a {
+        display: flex;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    /* Change the link color to #111 (black) on hover */
+    li a:hover {
+        background-color: #66CCFF;
+    }
+
+    .active {
+        background-color: #66CCFF;
+    }
+    li {
+        border-right: 1px solid #000000;
+    }
+    h1.logo{
+        display: block;
+        text-align: left;
+        font-size: 1.0em;
     }
