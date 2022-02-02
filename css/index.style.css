@@ -6,6 +6,12 @@
     
 }
 
+hr.light{
+    border-top: 4px solid #105ccea6;
+    width: 100%;
+    
+}
+
 
 /* Navigation barre */
 header{
@@ -20,6 +26,8 @@ header{
     align-items: center;
     transition: 0.5s;
     border-top: 0.25rem solid #105ccea6;
+    border-bottom: 0.25rem solid #105ccea6;
+
     box-shadow:  0px 4px 12px rgb(17 17 17 / 30%);
 }
 .logo{
@@ -58,19 +66,21 @@ header{
     list-style: none;
 }
 .navbar a{
-    color: rgba(0,0,0,.5);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 700;
     font-size: 1.3em;
     margin: 20px 20px;
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
+
 }
 
 
 .btn-login{
-    padding: 10px 0px;
+    padding: 5px 5px;
     width: 40px;
     height: 40px;
-    border-radius: 0.9em;
+    border-radius: 1em;
     cursor: pointer;
 }
 
@@ -80,8 +90,8 @@ header{
 }
 
 header .navbar li a:hover{
-    color: #105ccea6;
-    border-bottom: 2px solid #105ccea6;
+    color: #000000a6;
+    border-bottom: 2px solid #000000a6;
 }
 
 /* scrool barre de navigation */
@@ -106,18 +116,54 @@ header.sticky li a:hover{
     border-bottom: 2px solid #105ccea6;
 }
 
+/* banniere */
+
+.banniere{
+    position: relative;
+    width: 100%;
+    min-height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(252, 255, 52, 0.336), rgba(14, 167, 255, 0.664)),
+    url(../img/voyage-banner.jpg);
+    background-size: cover;
+    box-shadow: 0px 5px 20px rgba(0,0,0, 0.05);
+
+}
+
+.banniere .contenu {
+    font-size: 1.4em;
+    color: ivory;
+    text-shadow: black;
+    text-shadow: 1px 2px 3px rgb(0, 0, 0);
+    text-align: center;
+    padding: 0px 150px;
+
+}
+
+
+
+
+
+
 /* search box */
 
 .search-box{
+    position: absolute;
+    margin-top: -15%;
+    left: 10%;
     border: solid 1px #52057b;
-    margin-top: 40%;
-    padding: 30px -150px;
+    padding: 30px 10px;
     display:flex;
     justify-content: center;
     box-shadow:1px 2px 3px #716677;
     border-radius: 2em;
     background-color: rgb(248, 248, 248);
-    border-top: 0.25rem solid #105ccea6;
+    border-top: 0.5rem solid #716677;
+    width: 80%;
+    height: 10%;
+    
 }
 
 .search-box select{
@@ -129,7 +175,7 @@ header.sticky li a:hover{
 }
 
 .search-option{
-    margin-top: 9%;
+    margin-left: -3%;
 }
 
 .search-box button{
@@ -159,11 +205,17 @@ header.sticky li a:hover{
 	left: 23%;
 }
 
+.btn1:hover{
+    background-color: #1023cea6;
+    transition: ease-out;
+}
+
 /* search box for smrtphones */
 @media screen and (max-width: 460px){
     .search-box input, .search-box button, .search-box select{
         min-width: 300px;
         margin-top: 5px;
+
     }    
 
 }
@@ -171,9 +223,175 @@ header.sticky li a:hover{
 /* calendrier */
 
 section .calender {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin: 5.3%;
-    margin-left: -8%;
+    margin-left: -10%;
     padding: 10px 10px;
+    margin-top: 1.4%;
+    cursor: pointer;
+}
+
+/* section carousel */
+
+.carousel span{
+    color: #105ccea6;
+    font-size: 1.2em;
+    margin-top: -3.5px;
+}
+
+.carousel h1{
+        color: rgb(0, 0, 0);
+        text-align: center;
+        margin-top: 10%;
+        font-size: 2em;
+      
+}
+
+
+.visuallyhidden {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    opacity: 0;
+    
+  }
+  
+  
+  .container {
+    overflow: hidden;
+    padding: 100px;
+    margin-top: 2em;
+    background: rgba(255, 255, 255, 0.1)
+  }
+  
+  .card-carousel {
+    --card-width: 80%;
+    --card-max-width: 280px;
+    --card-height: 350px;
+    --carousel-min-width: 600px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    transition: filter .3s ease;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .card-carousel {
+      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    }
+  }
+  
+  .card-carousel.smooth-return {
+    transition: all .2s ease;
+  }
+  
+  .card-carousel .card {
+    background: whitesmoke;
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 250px;
+    height: var(--card-height);
+    position: absolute;
+    margin: 0 auto;
+    color: rgba(0,0,0,.5);
+    transition: inherit;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 1em;
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card.highlight {
+    filter: brightness(1)
+  }
+  
+  
+  .card:nth-of-type(1) .image-container {
+      background-image: url("https://picsum.photos/seed/picsum/200/300");
+  }
+   
+  .card:nth-of-type(2) .image-container {
+    background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")
+  }
+  
+  .card:nth-of-type(3) .image-container {
+    background-image: url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+  }
+  .card:nth-of-type(4) .image-container {
+    background-image: url("https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+  }
+  .card:nth-of-type(5) .image-container {
+    background-image: url("https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg")
+  }
+  
+  
+  
+  .image-container {
+    width: 10em;
+    height: 10em;
+    position: relative;
+    background-size: cover;
+    margin-bottom: 1.7em;
+    border-radius: 20%;
+    padding: 1em;
+    -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+  box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+    
+  }
+  
+  .image-container::after {
+    content: "";
+    display: block;
+    width: 120%;
+    height: 120%;
+    border: solid 3px rgba(0,0,0,.1);
+    border-radius: 20%;
+    position: absolute;
+    top: calc(-10% - 3px);
+    left: calc(-10% - 3px);
+    margin-top: 4%;
+  }
+
+  .btn2{
+    font-size: 1em;
+    color: #fff;
+    background: #105ccea6;
+    padding: 10px 10px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    position: relative;
+	left: 40%;
+    margin-top: 5%;
+}
+
+.btn2:hover{
+    letter-spacing: 4px;
+}
+
+.container h2 {
+    color: #105ccea6;
+    font-size: 1.8em;
+}
+
+.container h4 {
+    color: brown;
+    text-decoration: brown;
+    font-style:oblique;
 }

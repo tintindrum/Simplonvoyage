@@ -17,16 +17,20 @@
         <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navbar">
             <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
-            <li><a href="#apropos" onclick="toggleMenu();">Nos destinations</a></li>
+            <li><a href="#apropos" onclick="toggleMenu();">Top destinations</a></li>
             <li><a href="#menu" onclick="toggleMenu();">Avis</a></li>
-            <li><a href="#expert" onclick="toggleMenu();">Actualités</a></li>
+            <li><a href="#expert" onclick="toggleMenu();">Avis</a></li>
             <li><a href="#temoignage" onclick="toggleMenu();">Contact</a></li>
             <img src="./img/connexion.png" class="btn-login" onclick="toggleMenu();"></img>
         </ul>
     </header>
 
-
-
+    <section class="banniere" id="banniere"> <!-- suite en tête de page -->
+        <div class="contenu">
+            <h2>Bienvenue , <br> Simplon Voyage vous propose nos meilleurs services afin de trouver votre voyage idéal aux prix les plus Attractifs </h2>
+        </div>
+    </section>
+    
     <section class="search-box">
         <div class="search-option">
             <div>
@@ -58,7 +62,7 @@
                 </select>
                 <input type="text" name="q" placeholder="Ville départ ...">
                 <input type="text" name="q" placeholder="Saisissez votre destination ...">
-                <a href="#menu" class="btn1">Rechercher</a>
+                <a href="#menu" class="btn1">Recherche</a>
             </div>
         </div>
         <div class="calender">
@@ -70,63 +74,49 @@
         </div>
     </section>
 
-    <section class="menu" id="menu">
-        <div class="titre">
-            <h2 class="titre-texte"><span>D</span>estination</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo temporibus porro, rem iusto sint ipsa inventore aliquid velit suscipit! Optio recusandae, fugiat quos sed aperiam quam enim magni harum nemo.</p>
-        </div>
-        <div class="contenu">
-            <div class="box">
-                <div class="imbox">
-                    <h2>France</h2>
-                    <img src="img/France.jpg" alt="">
+    
+    <section class="carousel">
+            <h1>Nos <span>Top</span> destinations du moment </h1>
+            <hr class="light">
+
+            <div class="container">
+              <div class="card-carousel">
+                <div class="card" id="1">
+                  <div class="image-container"></div>
+                  <h2>Paris</h2><br>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p><br>
+                  <h4>44444, à partie de 6 personne</h4>
                 </div>
-                <div class="text">
-                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</h3>
-                    <a href="#" class="btn2">Voir plus</a>
+                <div class="card" id="2">
+                  <div class="image-container"></div>
+                  <h2>Paris</h2><br>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p><br>
+                  <h4>44444, à partie de 6 personne</h4>
                 </div>
+                <div class="card" id="3">
+                  <div class="image-container"></div>
+                  <h2>Paris</h2><br>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p><br>
+                  <h4>44444, à partie de 6 personne</h4>
+                </div>  
+                <div class="card" id="4">
+                  <div class="image-container"></div>
+                  <h2>Paris</h2><br>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p><br>
+                  <h4>44444, à partie de 6 personne</h4>
+                </div>
+                <div class="card" id="5">
+                  <div class="image-container"></div>
+                  <h2>Paris</h2><br>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p><br>
+                  <h4>44444, à partie de 6 personne</h4>
+                </div>
+              </div>
+              <a href="#menu" class="btn2">Voir plus de destinations</a>
             </div>
-            <div class="box">
-                <div class="imbox">
-                    <h2>Italie</h2>
-                    <img src="img/italie.jpg" alt="">
-                </div>
-                <div class="text">
-                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</h3>
-                    <a href="#" class="btn2">Voir plus</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imbox">
-                    <h2>Espagne</h2>
-                    <img src="img/espagne.jpg" alt="">
-                </div>
-                <div class="text">
-                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</h3>
-                    <a href="#" class="btn2">Voir plus</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imbox">
-                    <h2>Pays-Bas</h2>
-                    <img src="img/paysbas.jpg" alt="">
-                </div>
-                <div class="text">
-                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</h3>
-                    <a href="#" class="btn2">Voir plus</a>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imbox">
-                    <h2>Allemagne</h2>
-                    <img src="img/allemagne.jpg" alt="">
-                </div>
-                <div class="text">
-                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</h3>
-                    <a href="#" class="btn2">Voir plus</a>
-                </div>
-            </div>
-        </div>
+            <hr class="light">
+
+    </section>
 
 
     
@@ -147,5 +137,6 @@
         }
     </script>
     <script src="./js/calendrier.js"></script>
+    <script src="./js/carousel.js"></script>
 </body>
 </html>
