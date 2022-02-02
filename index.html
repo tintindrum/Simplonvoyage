@@ -5,22 +5,128 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Agence de voyage</title>
 </head>
 <body>
     <header>
-        <a href="#" class="logo"><span>Tra</span>va<span>La</span></a>
+        <img src="./img/logo-simplon.jpg" class="logo"></img>
+        <div class="logo-title"><h4>Simplon Voyage<span> Travel</span><h4></div>
         <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="navbar">
             <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
-            <li><a href="#apropos" onclick="toggleMenu();">À propos de nous</a></li>
-            <li><a href="#menu" onclick="toggleMenu();">Guide destination</a></li>
-            <li><a href="#expert" onclick="toggleMenu();">Site Partenaire</a></li>
-            <li><a href="#temoignage" onclick="toggleMenu();">Avis</a></li>
-            <li><a href="#contact" onclick="toggleMenu();">Conctactez-nous</a></li>
-            <a href="#" class="btn-reserve"onclick="toggleMenu();">Inscription  Connexion</a>
+            <li><a href="#apropos" onclick="toggleMenu();">Nos destinations</a></li>
+            <li><a href="#menu" onclick="toggleMenu();">Avis</a></li>
+            <li><a href="#expert" onclick="toggleMenu();">Actualités</a></li>
+            <li><a href="#temoignage" onclick="toggleMenu();">Contact</a></li>
+            <img src="./img/connexion.png" class="btn-login" onclick="toggleMenu();"></img>
         </ul>
     </header>
+
+
+
+    <section class="search-box">
+        <div class="search-option">
+            <div>
+                <select name="people" id="">
+                    <option value="Everything">Nombre de personnes</option>
+                    <option value="nbpeople">1</option>
+                    <option value="nbpeople">2</option>
+                    <option value="nbpeople">3</option>
+                    <option value="nbpeople">4</option>
+                    <option value="nbpeople">5</option>
+                    <option value="nbpeople">6</option>
+                    <option value="nbpeople">+6 Personnes</option>
+                </select>
+                <select name="time" id="">
+                    <option value="Everything">Durée</option>
+                    <option value="duree">1 à 2 Nuits</option>
+                    <option value="duree">3 à 6 Nuits</option>
+                    <option value="duree">1 Semaine</option>
+                    <option value="duree">Plus d'une Semaine</option>
+                </select>
+                <select name="prix" id="">
+                    <option value="Everything">Prix entre</option>
+                    <option value="trancheprix">0€ à 200€</option>
+                    <option value="trancheprix">200€ à 400€</option>
+                    <option value="trancheprix">400€ à 600€</option>
+                    <option value="trancheprix">600€ à 800€</option>
+                    <option value="trancheprix">800€ à 1000€</option>
+                    <option value="trancheprix">plus de 1000€</option>
+                </select>
+                <input type="text" name="q" placeholder="Ville départ ...">
+                <input type="text" name="q" placeholder="Saisissez votre destination ...">
+                <a href="#menu" class="btn1">Rechercher</a>
+            </div>
+        </div>
+        <div class="calender">
+                <br><br><b>Date de départ<b>
+                <table cellpadding="0" cellspacing="0">
+                <tr><td ><input type="text" maxlength="10" id="dateDebut" onfocus="view_microcal(true,dateDebut,microcal,-1,0);" onblur="view_microcal(false,dateDebut,microcal,-1,0);" onkeyup="this.style.color=testTypeDate(this.value)?'black':'red'"></td></tr>
+                <tr><td><div id="microcal" style="visibility:hidden;position:absolute;border:2px red dashed;background:#ffffff;"></div></td></tr>
+                </table>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="titre">
+            <h2 class="titre-texte"><span>D</span>estination</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo temporibus porro, rem iusto sint ipsa inventore aliquid velit suscipit! Optio recusandae, fugiat quos sed aperiam quam enim magni harum nemo.</p>
+        </div>
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+                    <h2>France</h2>
+                    <img src="img/France.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</h3>
+                    <a href="#" class="btn2">Voir plus</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <h2>Italie</h2>
+                    <img src="img/italie.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</h3>
+                    <a href="#" class="btn2">Voir plus</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <h2>Espagne</h2>
+                    <img src="img/espagne.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</h3>
+                    <a href="#" class="btn2">Voir plus</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <h2>Pays-Bas</h2>
+                    <img src="img/paysbas.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</h3>
+                    <a href="#" class="btn2">Voir plus</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imbox">
+                    <h2>Allemagne</h2>
+                    <img src="img/allemagne.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque voluptate cupiditate nesciunt necessitatibus quaerat error aut porro rem officia, maxime velit veniam voluptatem! Consequatur odio distinctio magnam velit atque.</h3>
+                    <a href="#" class="btn2">Voir plus</a>
+                </div>
+            </div>
+        </div>
 
 
     
@@ -40,5 +146,6 @@
             menuToggle.classList.toggle('active');
         }
     </script>
+    <script src="./js/calendrier.js"></script>
 </body>
 </html>
