@@ -55,6 +55,12 @@ header{
 
 }
 
+.titre-blanc span{
+    color: #105ccea6;
+    font-size: 1.3em;
+
+}
+
 .navbar {
     display: flex;
     position: relative;
@@ -125,7 +131,7 @@ header.sticky li a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(252, 255, 52, 0.336), rgba(14, 167, 255, 0.664)),
+    background-image: linear-gradient(rgba(244, 248, 15, 0.336), rgba(14, 167, 255, 0.664)),
     url(../img/voyage-banner.jpg);
     background-size: cover;
     box-shadow: 0px 5px 20px rgba(0,0,0, 0.05);
@@ -163,6 +169,7 @@ header.sticky li a:hover{
     border-top: 0.5rem solid #716677;
     width: 80%;
     height: 10%;
+    
     
 }
 
@@ -347,8 +354,8 @@ section .calender {
     border-radius: 20%;
     padding: 1em;
     -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
-  -moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
-  box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
     
   }
   
@@ -395,3 +402,143 @@ section .calender {
     text-decoration: brown;
     font-style:oblique;
 }
+
+/* section 5 Avis  */
+
+.temoignage{
+    background-image: url(../img/agence.jpg);
+    background-size: cover;
+    cursor: default;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+
+.temoignage .contenu{
+    display: flex;
+    margin-top: -0.2%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-image: url(../img/banner-avis.jpg);
+    background-size: cover;
+}
+
+
+
+.temoignage .contenu .box{
+    width: 350px;
+    margin: 20px;
+    background: #fff;
+    box-shadow: 20px 15px 35px rgba(0,0,0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.temoignage .contenu .box .imbox{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.temoignage .contenu .box .imbox img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.temoignage .contenu .box .text{
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+.temoignage .contenu .box .text h3{
+    color: #105ccea6;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor : pointer;
+}
+
+
+/* section professionnel */
+
+.expert{
+    margin-top:15%;
+}
+
+.expert .contenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.expert .titre{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.expert .titre p {
+    margin-top: 5%;
+}
+
+.expert .titre span {
+    color: #105ccea6;
+    font-size: 2em;
+}
+
+.expert .contenu .box{
+    width: 350px;
+    height: 400px;
+    margin: 35px;
+    margin-bottom: -2%;
+    background-color: rgb(226, 221, 214);
+    border-radius: 2em;
+
+}
+.expert .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 2em;
+}
+
+.expert .contenu .box h3{
+    color: #111;
+    font-weight: 400;
+    text-align: center;
+}
+
+.copyright{
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 100vw;
+    text-align: center;
+    height: 10vh;
+    font-size: 80%;
+
+}
+
+
