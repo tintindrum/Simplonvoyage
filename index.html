@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Agence de voyage</title>
+</head>
+<body>
+
+    <!-- banniere -->
+    <header>
+        <img src="./img/logo-simplon.jpg" class="logo"></img>
+        <div class="logo-title"><h4>Simplon Voyage<span> Travel</span><h4></div>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navbar">
+            <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+            <li><a href="#apropos" onclick="toggleMenu();">Top destinations</a></li>
+            <li><a href="#menu" onclick="toggleMenu();">Destinations</a></li>
+            <li><a href="#expert" onclick="toggleMenu();">Avis</a></li>
+            <li><a href="#temoignage" onclick="toggleMenu();">Contact</a></li>
+            <img src="./img/connexion.png" class="btn-login" onclick="toggleMenu();"></img>
+        </ul>
+    </header>
+
+    <section class="banniere" id="banniere"> <!-- suite en tête de page -->
+        <div class="contenu">
+            <h2>Bienvenue , <br> Simplon Voyage vous propose nos meilleurs services afin de trouver votre voyage idéal aux prix les plus Attractifs </h2>
+        </div>
+    </section>
+    <!-- banniere : search-box -->
+    <section class="search-box">
+        <div class="search-option">
+                <select name="people" id="">
+                    <option value="Everything">Nombre de personnes</option>
+                    <option value="nbpeople">1</option>
+                    <option value="nbpeople">2</option>
+                    <option value="nbpeople">3</option>
+                    <option value="nbpeople">4</option>
+                    <option value="nbpeople">5</option>
+                    <option value="nbpeople">6</option>
+                    <option value="nbpeople">+6 Personnes</option>
+                </select>
+                <select name="time" id="">
+                    <option value="Everything">Durée</option>
+                    <option value="duree">1 à 2 Nuits</option>
+                    <option value="duree">3 à 6 Nuits</option>
+                    <option value="duree">1 Semaine</option>
+                    <option value="duree">Plus d'une Semaine</option>
+                </select>
+                <select name="prix" id="">
+                    <option value="Everything">Prix entre</option>
+                    <option value="trancheprix">0€ à 200€</option>
+                    <option value="trancheprix">200€ à 400€</option>
+                    <option value="trancheprix">400€ à 600€</option>
+                    <option value="trancheprix">600€ à 800€</option>
+                    <option value="trancheprix">800€ à 1000€</option>
+                    <option value="trancheprix">plus de 1000€</option>
+                </select>
+                <input type="text" name="q" placeholder="Ville départ ...">
+                <input type="text" name="q" placeholder="Saisissez votre destination ...">
+                <a href="#menu" class="btn1">Recherche</a>
+         </div>
+        <div class="calender">
+                <br><br><b>Date de départ<b>
+                <table cellpadding="0" cellspacing="0">
+                <tr><td ><input type="text" maxlength="10" id="dateDebut" onfocus="view_microcal(true,dateDebut,microcal,-1,0);" onblur="view_microcal(false,dateDebut,microcal,-1,0);" onkeyup="this.style.color=testTypeDate(this.value)?'black':'red'"></td></tr>
+                <tr><td><div id="microcal" style="visibility:hidden;position:absolute;border:2px red dashed;background:#ffffff;"></div></td></tr>
+                </table>
+        </div>
+    </section>
+
+<!-- Top destinations -->
+    <section class="carousel">
+            <h1>Nos <span>Top</span> destinations du moment </h1>
+            <hr class="light">
+
+            <div class="container">
+              <div class="card-carousel">
+                <div class="card" id="1">
+                  <div class="image-container"></div>
+                  <h2>Algarve, Portugal</h2><br>
+                  <p>Meilleure destination plage</p><br>
+                  <h4><span>250 €*</span><br> à partir de 2 personnes<br>Pour 7 jours</h4>
+                </div>
+                <div class="card" id="2">
+                  <div class="image-container"></div>
+                  <h2>Chili</h2><br>
+                  <p>Meilleure destination aventure</p><br>
+                  <h4><span>400 €*</span><br> à partir de 2 personnes<br>Pour 7 jours</h4>
+                </div>
+                <div class="card" id="3">
+                  <div class="image-container"></div>
+                  <h2>Moscou, Russie</h2><br>
+                  <p>Meilleur city break</p><br>
+                  <h4><span>500 €*</span><br> à partir de 2 personnes<br>Pour 7 jours</h4>
+                </div>  
+                <div class="card" id="4">
+                  <div class="image-container"></div>
+                  <h2>Jamaïque</h2><br>
+                  <p>Meilleure destination pour les familles<br></p><br>
+                  <h4><span>600 €*</span><br> à partir de 2 personnes<br>Pour 7 jours</h4>
+                </div>
+                <div class="card" id="5">
+                  <div class="image-container"></div>
+                  <h2>Dubaï</h2><br>
+                  <p>Meilleur aéroport </p><br>
+                  <h4><span>1000 €*</span><br> à partir de 2 personnes<br>Pour 7 jours</h4>
+                </div>
+              </div>
+              <a href="#menu" class="btn2">Voir plus de destinations</a>
+              <hr class="light">
+            </div>
+            
+
+    </section>
+
+    <!-- Galerie d'images -->
+
+    <section class="galerie">
+        <h1><span>Galerie</span> d'images</h1>
+        <hr class="light">
+        <p></p>
+        <div class="slideshow">
+            <ul>
+                <li><img src="./img/galerie1.jpg" alt><span>Portugal , Madère</span></li>
+                <li><img src="./img/galerie2.jpeg" alt><span>Egypte , Hurghada</span></li>
+                <li><img src="./img/galerie3.jpg" alt><span>Maroc , Marrakech</span></li>
+                <li><img src="./img/galerie4.jpeg" alt><span>Portugal , Madère</span></li>
+                <li><img src="./img/galerie5.jpg" alt><span>Japon ,  Kyoto</span></li>
+            </ul>
+            <div class="barre_progression"></div>
+        </div>
+    </section>
+<!-- Avis -->
+    <section class="temoignage" id="temoignage">
+        <div class="titre-blanc">
+            <hr class="light">
+            <h2 class="titre-texte">Les <span>Avis</span> Utilisateurs</h2>
+        </div>
+        <div class="contenu">
+            <div class="box">
+                <div class="imbox">
+                <img src="img/avis1.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Séjour parfaitement bien organisé, aucun problème avec le transport , les transferts, et l’accueil pour l'appartement ,qui était vraiment très bien situé.</p>
+                <h3>Famille L.</h3>
+                <h4>Vacances - Barcelone</h4>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="img/avis2.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Un voyage de noces parfait ! Une destination enchanteresse, des paysages à couper le souffle et une culture qui nous dépayse complètement. Sur place, on a eu juste à se laisser porter et à profiter, grâce à la bonne organisation de l'agence. On recommande les services de Travala Guide !Ce séjour s'est donc avéré parfaitement équilibré. Nous avons particulièrement apprécié la qualité des hôtels retenus. De quoi voyager en tout esprit libre !</p>
+                <h3>Guillaume et Nelly W.</h3>
+                <h4>Voyage de Noces - Paris</h4>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="img/avis3.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>Comme toujours, tout s'est très bien passé, aucun soucis! Hôtel magnifique, très beau séjour! Merci à toute votre équipe pour nous avoir encore une fois très bien organisé ce voyage.</p>
+                <h3>Isabelle et Jean-Paul B. </h3>
+                <h4>Séjour - Amsterdam</h4>
+            </div>
+        </div>
+     </div>
+   </section>
+
+   <!-- section pro -->
+
+   <section class="expert" id="expert">
+    <div class="titre">
+        <h2 class="titre-texte">Nos <span>E</span>xperts</h2>
+        <hr class="light">
+        <p>Les experts sont à votre disposition afin de répondre à toutes vos questions . </p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./img/equipe1.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3><b>Monsieur JP</b></h3>
+                <h3>Dev web</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./img/equipe1.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3><b>Monsieur Tintin</b></h3>
+                <h3>Dev web</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./img/equipe1.jpg" alt="">
+            </div>
+            <div class="text">
+                <h3><b>Monsieur Chris</b></h3>
+                <h3>Dev web</h3>
+            </div>
+        </div>
+    </div>
+ </div>
+ <a href="#menu" class="btn2">Contactez nos experts</a>
+</section>
+
+    <section>
+    <h2 class="copyright"><a href="#">© Simplon-voyage</a> 2022 | Copyright | Simplon voyage , Tous droits réservés </h2>
+    </section>
+
+
+
+
+
+    
+    
+    
+    
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header =document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0 );
+        });
+   
+        function toggleMenu(){
+            const tmenuToggle = document.querySelector('.menuToggle');
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+    </script>
+    <script src="./js/calendrier.js"></script>
+    <script src="./js/carousel.js"></script>
+</body>
+</html>
