@@ -700,3 +700,126 @@ img{
 
 
 
+/* responsive */
+
+@media (max-width:740px) {
+    header, 
+    header.sticky{
+        padding: 10px 20px;
+    }
+    
+    
+    header .navbar li{
+        margin-left: 0px;
+    }
+    
+    header .navbar li a {
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+    
+    .navbar{
+        display: none;
+    }
+    section{
+        padding: 20px;
+    }
+    
+    header .navbar.active{
+        width: 100%;
+        height: calc(100% -68px);
+        position: fixed;
+        top: 68px;
+        left:0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: #ffff;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    header .logo {
+        margin-left: 80px;
+    }
+    
+    header .navbar.active {
+        margin-top: 5px;
+    }
+    
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        right: 20%;
+        background-image: url(../img/iconemenu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        background-size: 40px;
+    }
+    
+    .menuToggle.active
+    {
+        background-image: url(../img/iconemenu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-origin: center;
+    }
+    
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+    
+    
+    .banniere .contenu h2{
+        font-size: 1.2em;
+        margin-bottom: 70%;
+    }
+
+    .search-box {
+        font-size: 1.1em;
+        top: 82%;
+        width:90%;
+        height: 30%;
+    }
+
+    .search-box .search-option {
+        font-size: 0.6em;
+        margin-left: 5%;
+        padding: 0px 0px;
+        
+    }
+    
+    
+    .contenu p:nth-child(2){
+        font-size: 1.2em;
+    }
+    .expert{
+        margin-top: 0px;
+    }
+    
+    .menu{
+        margin-top: 0px;
+    }
+    
+    
+    
+    
+    .temoignage h2{
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .temoignage p{
+    text-align: center;
+    }
+
+    .btn2{
+        left: 15%;
+        margin-top: 15%;
+    }
+
+}
