@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="destination.style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Guide simplon</title>
+   
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>S</span>implon<span>voyage</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navbar">
+            <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+            <li><a href="#apropos" onclick="toggleMenu();">À propos de nous</a></li>
+            <li><a href="#menu" onclick="toggleMenu();">Guide exemple destination</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Conctactez-nous</a></li>
+            <a href="#" class="btn-reserve"onclick="toggleMenu();">Inscription  Connexion</a>
+        </ul>
+    </header>                
+
+<div id=section-1></div>
+<div > 
+    <h1 id=section-2><span>D</span>estinations</h1>
+    <hr class="line">
+</div>
+<div id=section-3>
+
+</div>
+<!-- section Destinations ( hassan ) -->
+<section class="menu" id="menu">
+    <div class="titre">
+        
+        <h3></h3>
+    </div>
+    <div id="a">Pour tout nos aprenant Simplon choisissez parmi nos promo speciale Simplon !</a></div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                
+                <img src="image/france.jpg" alt="">
+            </div>
+            <h2>France<br><br></h2>
+            <div class="text">
+                <h3>Un voyage en France, c’est la découverte de paysages à couper le souffle : depuis les côtes sur lesquelles vous pourrez admirer des plages et falaises magnifiques jusqu'à l'intérieur des terres empruntes de traditions. La France, c'est la promesse d'un voyage qui correspondra à toutes vos envies : balnéaire, détente, découverte ou sportive..<br><br></h3>
+            </div>
+            <p><b>Promo-Simplon<br>250 euros/La nuit<br></b></p>
+            <p><b></b></p>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                
+                <img src="image/italie.jpg" alt="">
+            </div>
+            <h2>Italie<br><br></h2>
+            <div class="text">
+                <h3>L’Italie, pays d’art et d’histoire, se dessine sous les traits d’une botte, une forme si singulière qu’elle lui vaut le surnom de botte italienne. Un voyage en Italie est un véritable plongeon en plein cœur de la Renaissance. Rome, Florence, Venise, Naples et leurs monuments sont mondialement réputés..<br><br></h3>
+            </div>
+            <p><b>Promo-Simplon<br>449 euros/La nuit</b></p>
+        </div>
+        <div class="box">
+            <div class="imbox">
+               
+                <img src="image/espagne_307.jpg" alt="">
+            </div>
+            <h2>Espagne<br><br><br></h2>
+            <div class="text">
+                <h3>Au fil des saisons et au gré des régions, l’Espagne dévoile des paysages aux multiples facettes. Montagnes, plaines et côtes, la péninsule ibérique offre un décor étonnant de richesses. Son climat méditerranéen lui confère un ensoleillement quasi permanent, notamment dans le sud du pays, à Séville.. <br><br></h3>
+            </div>
+            <p><b>Promo-Simplon<br>329 euros/La nuit</b></p>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                
+                <img src="image/PAYBAS.jpg" alt="">
+            </div>
+            <h2>Pays-Bas<br><br></h2>
+            <div class="text">
+                <h3>Le royaume des Pays-Bas (en néerlandais: Koninkrijk der Nederlanden) est un pays d’Europe du Nord limité à l’est par l’Allemagne, au sud par la Belgique et au nord par la mer du Nord. Paysages grandioses, vie douce et trésors patrimoniaux… Envolez-vous pour les Pays-Bas avec notre sélection des plus beaux endroits à visiter dans ce superbe pays !<br><br></h3>
+            </div>
+            <p><b>Promo-Simplon<br>309 euros/La nuit</b></p>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                
+                <img src="image/allemagne.jpg" alt="">
+            </div>
+            <h2>Allemagne<br><br></h2>
+            <div class="text">
+                <h3>L'Allemagne, outre sa position centrale au coeur de l'Europe, offre un riche patrimoine culturel et historique et allie à la perfection modernisme et tradition.  La Bavière, la forêt noire, les cités médiévales ou encore les célèbres monuments de Berlin, chacun y trouve son compte. Un seul voyage en Allemagne ne suffit pas pour découvrir la diversité de l'allemagne et de sont patrimoine allemand..<br><br></h3>
+             </div>
+             <p><b>Promo-Simplon<br>139 euros/La nuit</b></a>
+        </div>
+    </div>
+
+   <div><article>
+        <h1>Simplon Voyage</h1>
+        <ol>
+            <p>Promos pour tous les aprennant</p>
+            
+        </ol>
+        <footer></div> 
+            <p>© 2022 Quentin,Christopher,Jean-Pierre</p>
+        </footer>
+    </article>
+   
+       <!-- script JS barre de navigation  -->
+  <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header =document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0 );
+        });
+   
+        function toggleMenu(){
+            const tmenuToggle = document.querySelector('.menuToggle');
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+  </script>
+</body>
+</html>
