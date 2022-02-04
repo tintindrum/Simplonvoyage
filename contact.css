@@ -2,6 +2,7 @@
 body {
     background-image:url(iles.jfif);
     background-size: cover;
+    font-family: 'poppins', sans-serif;
     /* background-repeat: no-repeat;
     background: size 3000px ;
     border : solide 2px;
@@ -17,6 +18,7 @@ body {
     .contactez-nous {
     width: 70%;
     margin-left: 15%;
+    opacity: 0.9;
     border: 1px solid;
     border-radius: 40px;
     /* padding: 0 50px 0 50px; */
@@ -25,7 +27,7 @@ body {
     
     .contactez-nous > h1 {
     font-weight: 500;
-    margin-left: 210px;
+    text-align: center;
     }
     
     .contactez-nous > p {
@@ -113,7 +115,7 @@ body {
     font-size: 14px;
     background: white;
     border: rgba(48, 48, 48, 0.5) solid 1px;
-    border-radius: 5px;
+    border-radius: 30px;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
     color: #303030;
     cursor: pointer;
@@ -121,5 +123,120 @@ body {
 
     form button:hover {
         letter-spacing: 4px;
-        transition: 0.5s;
+        transition: 1s;
     }
+    footer 
+        html{
+            font-size:62.5%;
+          }
+          body{
+            font:300 1.6em/1.4em Helvetica, Arial, "sans-serif";
+          }
+          h1{padding:1em; text-align:center;}
+          .scene{position:relative;
+            display:block; 
+            margin:0 auto; 
+            width:300px;
+            height:200px; 
+          }
+          .plane,
+          .cloud{
+            position:absolute;
+          }
+          /*plane animation*/
+          .plane{ 
+            animation-duration: 1s;
+            animation-name: anim-plane;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function:linear;
+            
+            animation-fill-mode:forwards;	   
+            display:block;
+            margin:0 auto;
+            transform: translateY(80px);
+            left:30%;
+          }
+          
+          @keyframes anim-plane{ 
+            to{
+              transform:translateY(95px);
+            }    
+          }
+          
+          
+          /* Cloud Animation */
+          
+          @keyframes fade{
+            0%{ opacity: 0;}
+            10%{ opacity: 1;}
+            90%{ opacity:1;}
+            100%{ opacity:0;}
+          }
+          
+          @keyframes move{  
+            from{ 
+              left:200px; 
+            }
+            to{ 
+              left:0px; 
+            }
+          }
+           
+          
+          .cloud{ 
+            animation-duration:10s; 
+            animation-name:move, fade;
+            animation-direction: normal;
+            animation-iteration-count:infinite;
+            animation-timing-function:linear; 
+            animation-fill-mode:both;	  
+            
+            display:block;
+            background:url(data:image/svg+xml;base64,PHN2ZyBpZD0iY2xvdWQiIHZpZXdCb3g9IjAgMCA1MiA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI1MnB4IiBoZWlnaHQ9IjQwcHgiPgoJPGRlZnM+CgkJPGZpbHRlciBpZD0iZjEiIHg9Ii0xMDAlIiB5PSItMTAwJSIgd2lkdGg9IjMwMCUiIGhlaWdodD0iMzAwJSI+IAoJCQk8ZmVPZmZzZXQgcmVzdWx0PSJvdXQiIGluPSJTb3VyY2VHcmFwaGljIiBkeD0iMCIgZHk9IjEiLz4KCQkJPGZlQ29sb3JNYXRyaXggcmVzdWx0PSJvdXQiIGluPSJvdXQiIHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAgIDAgMCAwIDAgMCAgMCAwIDAgMCAwICAwIDAgMCAwLjQgMCIvPgoJCQk8ZmVHYXVzc2lhbkJsdXIgcmVzdWx0PSJvdXQiIGluPSJvdXQiIHN0ZERldmlhdGlvbj0iMiIvPgoJCQk8ZmVCbGVuZCBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJvdXQiIG1vZGU9Im5vcm1hbCIgcmVzdWx0PSJkcCIvPgoJCTwvZmlsdGVyPgoJPC9kZWZzPiAKCTxwYXRoIGlkPSJmZy1jbG91ZCIgZmlsdGVyPSJ1cmwoI2YxKSIgZD0iTTYuMyAzNS4xQzQuNyAzNC4yLTAuNCAzMi4zIDEuNCAyNSAzLjEgMTguMSA4LjcgMTkuNSA4LjcgMTkuNSA4LjcgMTkuNSAzLjIgMTQuMSAxMC40IDYuOCAxNi45IDAuMiAyMy4xIDQuNiAyMy4xIDQuNiAyMy4xIDQuNiAzMC0xLjcgMzUuMiAyLjQgNDQuNiA5LjcgNDIuOCAyNS4zIDQyLjggMjUuMyA0Mi44IDI1LjMgNDggMjIuNiA0OS44IDI4LjYgNTEgMzIuNyA0NiAzNS44IDQyLjggMzYuNyAzOS43IDM3LjUgOC45IDM2LjYgNi4zIDM1LjFaIiBzdHJva2U9IiNjY2NjY2MiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0iI2ZmZmZmZiIvPgo8L3N2Zz4=);
+            height:40px;
+            width:53px;
+            margin:0 auto;  
+          }
+          .cloud--small{
+            animation-duration:6s; 
+            top:65px;
+            transform: scaleX(0.5) scaleY(0.5); 
+          }
+          .cloud--medium{ 
+            animation-duration:5s;
+            animation-delay:1s;
+            top:95px;
+            transform: scaleX(0.7) scaleY(0.7); 
+          }
+          .cloud--large{
+            animation-duration:4.5s;
+            animation-delay:2.5s;
+            top:95px;
+            transform: scaleX(0.8) scaleY(0.8); 
+          }
+          
+          .whoami{
+            padding-top:1em;
+            text-align:center;  
+          }
+          .logo{
+              width: 50px;
+              margin-top: 30px;
+          }
+          li{
+            text-align:center
+          }
+          p{
+            text-align:center;
+            align-items: center;
+
+          }
+          .menu-footer ul{
+              display: flex;
+              justify-content: center;
+          }
+          .menu-footer li{
+              list-style:none;
+              display: inline;
+          }
