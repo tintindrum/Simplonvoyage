@@ -210,7 +210,7 @@ header.sticky li a:hover{
     letter-spacing: 2px;
     transition: 0.5s;
     position: relative;
-	left: 23%;
+	left: 22%;
 }
 
 .btn1:hover{
@@ -731,7 +731,7 @@ img{
         width: 100%;
         height: calc(100% -68px);
         position: fixed;
-        top: 68px;
+        top: 13%;
         left:0;
         display: flex;
         justify-content: center;
@@ -818,7 +818,7 @@ img{
     }
 
     .btn2{
-        left: 15%;
+        left: 14%;
         margin-top: 15%;
     }
 
