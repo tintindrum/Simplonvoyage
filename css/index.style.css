@@ -167,9 +167,10 @@ header.sticky li a:hover{
     box-shadow:1px 2px 3px #716677;
     border-radius: 2em;
     background-color: rgb(248, 248, 248);
-    border-top: 0.5rem solid #716677;
-    width: 80%;
+    width: 85%;
     height: 10%;
+    backdrop-filter: blur(10px);  
+    
     
     
 }
@@ -821,5 +822,56 @@ img{
         left: 14%;
         margin-top: 15%;
     }
+
+}
+
+@media (max-width: 350px){
+
+    .banniere .contenu h2{
+        font-size: 0.7em;
+        margin-bottom: 60%;
+    }
+
+    .search-box {
+        font-size: 1.1em;
+        top: 82%;
+        width:95%;
+        height: 30%;
+    }
+
+    .search-box .search-option {
+        font-size: 0.5em;
+        margin-left: 10%;
+        padding: 0px 0px;
+        
+    }
+
+    header .navbar.active{
+        width: 100%;
+        height: calc(100% -68px);
+        position: fixed;
+        top: 40%;
+        left:0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: #ffff;
+        align-items: center;
+        padding: 5px;
+    }
+
+    section .calender {
+        
+        margin: 9.3%;
+        margin-left: -20%;
+        padding: 10px 10px;
+        margin-top: 2.4%;
+        cursor: pointer;
+    }
+
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+    
 
 }
